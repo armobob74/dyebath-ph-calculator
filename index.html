@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Hi Tavon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="div1">
+<div>
+  <label for="rate">Interest rate:</label>
+  <input type="text" id="rate" placeholder="1.06"></input>
+</div>
+<div>
+  <label for="t">Years before you start paying:</label>
+  <input type="text" id="t" placeholder="8"></input>
+</div>
+<div>
+  <label for="cost">Total tuition (in thousands):</label>
+  <input type="text" id="cost" placeholder="244"></input>
+</div>
+  <button onclick="updatePage()">Calculate</button>
+  </div>
+  <div id="div2">
+    <p id="display_message"></p>
+    <h1 id="display_cost"></h1>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
