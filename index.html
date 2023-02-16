@@ -2,22 +2,18 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hi Tavon</title>
+  <title>Dyebath pH Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="div1">
 <div>
-  <label for="rate">Interest rate:</label>
-  <input type="text" id="rate" placeholder="1.06"></input>
+  <label for="target_ph">Target pH:</label>
+  <input type="numeric" id="target_ph" placeholder="11.00"></input>
 </div>
 <div>
-  <label for="t">Years before you start paying:</label>
-  <input type="text" id="t" placeholder="8"></input>
-</div>
-<div>
-  <label for="cost">Total tuition (in thousands):</label>
-  <input type="text" id="cost" placeholder="244"></input>
+  <label for="water_vol">Solution Volume (Liters):</label>
+  <input type="text" id="water_vol" placeholder="3"></input>
 </div>
   <button onclick="updatePage()">Calculate</button>
   </div>
@@ -25,6 +21,6 @@
     <p id="display_message"></p>
     <h1 id="display_cost"></h1>
   </div>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
