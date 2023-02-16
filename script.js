@@ -19,6 +19,6 @@ function updatePage(){
 
 	let data = calculate_mass(target_ph,water_vol);
 	document.getElementById('display_message').innerHTML = data.message;
-	document.getElementById('display_cost').innerHTML = data.mass_required;
+	//document.getElementById('display_cost').innerHTML = data.mass_required;
 }
 
