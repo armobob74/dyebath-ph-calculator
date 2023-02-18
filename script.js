@@ -5,7 +5,7 @@ const molar_mass = {
 	'na2co3': 105.99, // g/mol, from wikipedia.
 }
 function calculate_mass(target_ph,water_vol){
-	let mass_required = 10 ** (2 * (target_ph - 14) + Math.log10(kb['na2co3']/(molar_mass['na2co3']* water_vol)))
+	let mass_required = 10 ** (2 * (target_ph - 14)) * molar_mass['na2co3'] * water_vol / kb['na2co3']
 	let message = `To get a a <strong>${water_vol}L</strong> solution with a pH of <strong>${target_ph}</strong>, you need <strong>${mass_required}g</strong>  of Soda Ash`;
 	return {message: message, mass_required:mass_required}
 }
